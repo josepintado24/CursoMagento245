@@ -27,5 +27,14 @@
             action="joseadmin/index/home" 
             resource="Margento_ModuloBasico::home" 
         />
+         <add 
+            id="Margento_ModuloBasico::subscripcion" 
+            title="subscripcion"
+            module="Margento_ModuloBasico" 
+            sortOrder="50" 
+            parent="Margento_ModuloBasico::margentobackend" 
+            action="joseadmin/subscripcion"
+            resource="Margento_ModuloBasico::subscripcion" 
+        />
 	</menu>
 </config>
