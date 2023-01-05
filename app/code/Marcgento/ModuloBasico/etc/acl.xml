@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::marketing">
+                    <resource
+                        id="Marcgento_ModuloBasico::marcgentobackend"
+                        title="MarcgentoBackend" sortOrder="60">
+                        <resource id="Marcgento_ModuloBasico::index" title="MarcgentoBackend index" />
+                        <resource id="Marcgento_ModuloBasico::subscription" title="ModuloBasico subscription" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
