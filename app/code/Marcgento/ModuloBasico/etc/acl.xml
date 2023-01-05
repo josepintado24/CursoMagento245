@@ -9,6 +9,7 @@
                         title="MarcgentoBackend" sortOrder="60">
                         <resource id="Marcgento_ModuloBasico::index" title="MarcgentoBackend index" />
                         <resource id="Marcgento_ModuloBasico::subscription" title="ModuloBasico subscription" />
+                        <resource id="Marcgento_ModuloBasico::phono" title="ModuloBasico subscription" />
                     </resource>
                 </resource>
             </resource>

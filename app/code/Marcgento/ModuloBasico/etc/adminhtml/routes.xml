@@ -4,5 +4,8 @@
         <route id="marcgentoadmin" frontName="marcgentoadmin">
             <module name="Marcgento_ModuloBasico" before="Magento_Backend" />
         </route>
+        <route id="jladmin" frontName="jladmin">
+            <module name="Marcgento_ModuloBasico" before="Magento_Backend" />
+        </route>
     </router>
 </config>

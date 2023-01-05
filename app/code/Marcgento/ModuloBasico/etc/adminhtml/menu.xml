@@ -3,9 +3,9 @@
     <menu>
         <add
             id="Marcgento_ModuloBasico::marcgentobackend"
-            title="MarcgentoBackend"
+            title="Menu en Marketing"
             module="Marcgento_ModuloBasico"
-            sortOrder="50"
+            sortOrder="1"
             parent="Magento_Backend::marketing"
             resource="Marcgento_ModuloBasico::marcgentobackend"
         />
@@ -26,6 +26,15 @@
             parent="Marcgento_ModuloBasico::marcgentobackend"
             action="marcgentoadmin/subscription/"
             resource="Marcgento_ModuloBasico::subscription"
+        />
+        <add
+            id="Marcgento_ModuloBasico::phono"
+            title="Telefonos de Jose"
+            module="Marcgento_ModuloBasico"
+            sortOrder="40"
+            parent="Marcgento_ModuloBasico::marcgentobackend"
+            action="jladmin/phono/"
+            resource="Marcgento_ModuloBasico::phono"
         />
     </menu>
 </config>
