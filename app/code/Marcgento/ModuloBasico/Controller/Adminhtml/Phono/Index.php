@@ -21,11 +21,15 @@ class Index extends \Magento\Backend\App\Action
     public function execute()
     {
         $resultPage = $this->resultPageFactory->create();
+        $resultPage->setActiveMenu('Marcgento_ModuloBasico::phono');
+        $resultPage->addBreadcrumb(__('Grid Phono'), __('Grid Phono'));
+        $resultPage->addBreadcrumb(__('Manage Phono'), __('Manage Phono'));
+        $resultPage->getConfig()->getTitle()->prepend(__('Phono Title'));
         return $resultPage;
     }
 
-    public function _isAllowed()
+    protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Marcgento_ModuloBasico::index');
+        return $this->_authorization->isAllowed('Marcgento_ModuloBasico::Phono');
     }
 }

@@ -24,7 +24,7 @@ class Index extends \Magento\Backend\App\Action
         $resultPage->setActiveMenu('Marcgento_ModuloBasico::subscription');
         $resultPage->addBreadcrumb(__('Grid Subscription'), __('Grid Subscription'));
         $resultPage->addBreadcrumb(__('Manage Subscription'), __('Manage Subscription'));
-        $resultPage->getConfig()->getTitle()->prepend(__('Subscriptions'));
+        $resultPage->getConfig()->getTitle()->prepend(__('Subscriptions Title'));
         return $resultPage;
     }
 

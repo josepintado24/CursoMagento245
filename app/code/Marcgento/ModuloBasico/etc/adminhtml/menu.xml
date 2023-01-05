@@ -22,7 +22,7 @@
             id="Marcgento_ModuloBasico::subscription"
             title="Subscription"
             module="Marcgento_ModuloBasico"
-            sortOrder="52"
+            sortOrder="1"
             parent="Marcgento_ModuloBasico::marcgentobackend"
             action="marcgentoadmin/subscription/"
             resource="Marcgento_ModuloBasico::subscription"
