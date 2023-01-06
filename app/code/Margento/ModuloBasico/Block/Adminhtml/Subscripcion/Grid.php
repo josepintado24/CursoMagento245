@@ -1,4 +1,5 @@
 <?php
+
 namespace Margento\ModuloBasico\Block\Adminhtml\Subscripcion;
 
 use Magento\Backend\Block\Widget\Grid as WidgetGrid;
@@ -20,10 +21,11 @@ class Grid extends \Magento\Backend\Block\Widget\Grid\Extended
     public function __construct(
         \Magento\Backend\Block\Template\Context$context,
         \Magento\Backend\Helper\Data$backendHelper,
-        \Margento\ModuloBasico\Model\ResourceModel\Subscription\Collection$subscriptionCollection,
+        // \Marcgento\ModuloBasico\Model\ResourceModel\Subscription\Collection$subscriptionCollection,
         array $data = []
     ) {
-        $this->_subscriptionCollection = $subscriptionCollection;
+        // echo "oso";exit;
+        // $this->_subscriptionCollection = $subscriptionCollection;
         parent::__construct($context, $backendHelper, $data);
         $this->setEmptyText(__('No Subscription Found'));
     }
@@ -35,7 +37,7 @@ class Grid extends \Magento\Backend\Block\Widget\Grid\Extended
      */
     protected function _prepareCollection()
     {
-        $this->setCollection($this->_subscriptionCollection);
+        // $this->setCollection($this->_subscriptionCollection);
         return parent::_prepareCollection();
     }
 }

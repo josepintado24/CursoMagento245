@@ -24,7 +24,7 @@ class Index extends \Magento\Backend\App\Action
         $resultPage->setActiveMenu('Margento_ModuloBasico::subscripcion');
         $resultPage->addBreadcrumb(__('Grid Subscripcion'), __('Grid Subscripcion'));
         $resultPage->addBreadcrumb(__('Manage Subscripcion'), __('Manage Subscripcion'));
-        $resultPage->getConfig()->getTitle()->prepend(__('Subscripcion'));
+        $resultPage->getConfig()->getTitle()->prepend(__('Subscripcion SM'));
         return $resultPage;
     }
 
