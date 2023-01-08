@@ -5,9 +5,17 @@
             id="Margento_ModuloBasico::margentobackend" 
             title="Hello" 
             module="Margento_ModuloBasico" 
-            sortOrder="1" 
+            sortOrder="2" 
             parent='Magento_Backend::marketing'
             resource="Margento_ModuloBasico::margentobackend"
+         />
+         <add 
+            id="Margento_ModuloBasico::reservas" 
+            title="Reservas" 
+            module="Margento_ModuloBasico" 
+            sortOrder="1" 
+            parent='Magento_Backend::marketing'
+            resource="Margento_ModuloBasico::reservas"
          />
 		<add 
             id="Margento_ModuloBasico::index" 
@@ -35,6 +43,15 @@
             parent="Margento_ModuloBasico::margentobackend" 
             action="joseadmin/subscripcion"
             resource="Margento_ModuloBasico::subscripcion" 
+        />
+        <add 
+            id="Margento_ModuloBasico::numtelefono" 
+            title="Número Telefonicos"
+            module="Margento_ModuloBasico" 
+            sortOrder="1" 
+            parent="Margento_ModuloBasico::reservas" 
+            action="reservas/numtelefono"
+            resource="Magento_Backend::numtelefono" 
         />
 	</menu>
 </config>

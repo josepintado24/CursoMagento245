@@ -8,8 +8,11 @@
 						<resource id="Magento_Backend::index" title="MargentoBackend index" />
 						<resource id="Magento_Backend::home" title="MargentoBackend index" />
 						<resource id="Magento_Backend::subscripcion" title="Modulo de Subscripcion" />
-						<resource id="Magento_Backend::phono" title="Modulo de Phono" />
 					</resource>
+					<resource id="Margento_ModuloBasico::reservas" title="Reservas Marketing" sortOrder="20">
+						<resource id="Magento_Backend::numtelefono" title="Numero de telefonos" />
+					</resource>
+
 				</resource>
 			</resource>
 		</resources>

@@ -4,7 +4,7 @@
         <referenceContainer name="content">
             <!-- <block class="Magento\Backend\Block\Template" template="Marcgento_ModuloBasico::l.phtml"/> -->
             <!-- <block class="Marcgento\ModuloBasico\Block\Adminhtml\Subscription" name="adminhtml.block.marcgentobackend.subscription.container"> -->
-                <block class="Margento\ModuloBasico\Block\Adminhtml\Subscripcion" name="adminhtml.block.margentobackend.subcripcion.grid" />
+                <block class="Margento\ModuloBasico\Block\Adminhtml\Numtelefono" name="adminhtml.block.margentobackend.numtelefono.grid" />
             <!-- </block> -->
         </referenceContainer>
     </body>

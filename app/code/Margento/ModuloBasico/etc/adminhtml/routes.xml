@@ -6,5 +6,8 @@
         <route id="joseadmin" frontName="joseadmin">
             <module name="Margento_ModuloBasico" before='Magento_Backend' />
         </route>
+        <route id="reservas" frontName="reservas">
+            <module name="Margento_ModuloBasico" before='Magento_Backend' />
+        </route>
     </router>
 </config>

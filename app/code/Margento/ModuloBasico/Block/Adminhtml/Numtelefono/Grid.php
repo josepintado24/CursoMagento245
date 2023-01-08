@@ -1,6 +1,6 @@
 <?php
 
-namespace Margento\ModuloBasico\Block\Adminhtml\Subscripcion;
+namespace Margento\ModuloBasico\Block\Adminhtml\Numtelefono;
 
 use Magento\Backend\Block\Widget\Grid as WidgetGrid;
 
@@ -21,7 +21,7 @@ class Grid extends \Magento\Backend\Block\Widget\Grid\Extended
     public function __construct(
         \Magento\Backend\Block\Template\Context$context,
         \Magento\Backend\Helper\Data$backendHelper,
-        \Margento\ModuloBasico\Model\ResourceModel\Subscripcion\Collection$subscriptionCollection,
+        \Margento\ModuloBasico\Model\ResourceModel\Numtelefono\Collection$subscriptionCollection,
         array $data = []
     ) {
         // echo "oso";exit;
@@ -40,46 +40,40 @@ class Grid extends \Magento\Backend\Block\Widget\Grid\Extended
         $this->setCollection($this->_subscriptionCollection);
         return parent::_prepareCollection();
     }
-
-     /**
-     * Prepare grid columns
-     *
-     * @return $this
-     */
     protected function _prepareColumns()
     {
         $this->addColumn(
-          'subscription_id',
+          'numtelefono_id',
           [
               'header' => __('ID'),
-              'index' => 'subscription_id',
+              'index' => 'numtelefono_id',
           ]
         );
         $this->addColumn(
-            'firstname',
+            'Nombre',
             [
-                'header' => __('hhhhhhhhhhhhhhh'),
-                'index' => 'firstname',
+                'header' => __('Nombre'),
+                'index' => 'Nombre',
             ]
         );
         $this->addColumn(
-            'lastname',
+            'Apellidos',
             [
-                'header' => __('LASTNAME'),
-                'index' => 'lastname',
+                'header' => __('Apellidos'),
+                'index' => 'Apellidos',
             ]
         );
         $this->addColumn(
             'email',
             [
-                'header' => __('EMAIL'),
+                'header' => __('email'),
                 'index' => 'email',
             ]
         );
         $this->addColumn(
             'status',
             [
-                'header' => __('Status'),
+                'header' => __('Estatus'),
                 'index' => 'status',
                 'frame_callback' => [$this, 'decorateStatus']
             ]
@@ -105,4 +99,6 @@ class Grid extends \Magento\Backend\Block\Widget\Grid\Extended
         }
         return '<span class="'.$class.'"><span>'.$value.'</span></span>';
     }
+
+  
 }
