@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceBlock name="logo">
+			<action method="setLogoFile">
+				<argument name="logo_file" xsi:type="string">
+					images/logo.jpg
+				</argument>
+			</action>
+		</referenceBlock>
+		<referenceContainer name="footer-bottom-content">
+			<block class="Magento\Framework\View\Element\Template" name="report.bug.buttom" template="Magento_Theme::html/bugreport.phtml" />
+		</referenceContainer>
+	</body>
+</page>
