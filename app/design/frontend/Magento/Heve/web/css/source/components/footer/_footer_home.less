@@ -1,0 +1,100 @@
+footer {
+  position: relative;
+  .footer.content{
+    margin-top: 0;
+  }
+
+  .mask img {
+    position: absolute;
+    width: 200px;
+    right: 0;
+    top: 0;
+    float: right;
+  }
+
+  &.page-footer {
+    background: rebeccapurple;
+
+  }
+
+  .container,
+  .container-fluid {
+    color: @color-White;
+
+    .marca {
+      font-size: 30px;
+      font-family: 'HKGrotesk-bold';
+    }
+
+    .contacto {
+      .title span {
+        font-family: 'HKGrotesk-bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      .tipo_contacto {
+        span:nth-of-type(2) {
+          font-family: 'HKGrotesk-Regular';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 20px;
+        }
+
+        span:nth-of-type(3) {
+          font-family: 'HKGrotesk-Regular';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+      }
+    }
+
+    .app {
+      .title span {
+        font-family: 'HKGrotesk-bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      img {
+        width: 150px;
+      }
+    }
+
+    .link {
+      span {
+        font-family: 'HKGrotesk-Regular';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        border-bottom: 2px solid @color-White;
+        padding-bottom: 8px;
+      }
+
+      ul {
+        margin-top: 25px;
+      }
+
+      ul li {
+        font-family: 'HKGrotesk-Light';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 37px;
+      }
+    }
+
+
+
+  }
+
+}

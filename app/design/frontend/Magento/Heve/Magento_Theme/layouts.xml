@@ -3,4 +3,7 @@
     <layout id="jl-footer">
         <label>Jose Luis Footer</label>
     </layout>
+    <layout id="footer-home">
+        <label>Jose Luis Footer Home</label>
+    </layout>
 </page_layouts>

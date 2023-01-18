@@ -1,15 +1,61 @@
-<?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 	<body>
-		<referenceBlock name="logo">
-			<action method="setLogoFile">
-				<argument name="logo_file" xsi:type="string">
-					images/logo.jpg
-				</argument>
-			</action>
-		</referenceBlock>
+		<referenceContainer name="header.container">
+			<!-- remove header elements -->
+			<referenceBlock name="header.panel.wrapper" remove="false" />
+			<referenceBlock name="logo" remove="false" />
+			<referenceBlock name="minicart" remove="false" />
+			<referenceBlock name="top.search" remove="false" />
+			<referenceBlock name="catalog.compare.link" remove="false" />
+			<!-- logo -->
+			<referenceBlock name="logo">
+				<arguments>
+					<argument name="logo_file" xsi:type="string">
+						images/logo.jpg
+					</argument>
+					<argument name="logo_img_width" xsi:type="number">
+						300
+					</argument>
+					<argument name="logo_img_height" xsi:type="number">
+						300
+					</argument>
+				</arguments>
+			</referenceBlock>
+			<!-- new header -->
+			<!--
+			<container name="new-header" htmlTag="div" htmlClass="fusionHeader" after="header.panel.wrapper">
+			<block class="Magento\Framework\View\Element\Template" name="fusion-header" before="-" template="Magento_Theme::html/header/header.phtml" cacheable="false" />
+			</container>
+			-->
+		</referenceContainer>
+		<!-- move minicart into header.panel -->
+		<move element="minicart" destination="header.panel" before="top.links" />
+		<!-- new footer -->
+		<referenceContainer name="footer">
+			<!-- clear foooter elements -->
+			<referenceBlock name="footer_links" remove="true" />
+			<referenceBlock name="form.subscribe" remove="true" />
+			<referenceBlock name="copyright" remove="false" />
+			<referenceBlock name="report.bugs" remove="true" />
+			<!-- new footer -->
+			<container name="enlaces" before="-">
+				<block class="Magento\Framework\View\Element\Template" name="enlacesFooter" before="-" as="enlacesFooter" template="Magento_Theme::html/footer/footer.phtml" cacheable="false" />
+			</container>
+			
+			<container name="report.bugs"  before="copyrightFooter">
+				<block class="Magento\Framework\View\Element\Template" name="reportbugsFooter" as="reportbugsFooter" template="Magento_Theme::html/bugreport.phtml" cacheable="false" />
+			</container>
+			<container name="copyright" after="report.bugs">
+				<block class="Magento\Framework\View\Element\Template" name="copyrightFooter"  as="copyrightFooter" template="Magento_Theme::html/footer/copyright.phtml" cacheable="false" />
+			</container>
+		</referenceContainer>
+		<!--
 		<referenceContainer name="footer-bottom-content">
-			<block class="Magento\Framework\View\Element\Template" name="report.bug.buttom" template="Magento_Theme::html/bugreport.phtml" />
+		<block class="Magento\Framework\View\Element\Template" name="report.bug.buttom" before="footer" template="Magento_Theme::html/bugreport.phtml" />
+		</referenceContainer>
+		-->
+		<referenceContainer name="copyright">
+			<block class="Magento\Framework\View\Element\Template" name="copyrightFooter" before="-" as="enlacesFooter" template="Magento_Theme::html/footer/copyright.phtml" cacheable="false" />
 		</referenceContainer>
 	</body>
 </page>
