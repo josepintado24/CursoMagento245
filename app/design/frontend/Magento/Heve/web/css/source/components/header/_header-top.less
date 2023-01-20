@@ -1,0 +1,33 @@
+header {
+    .header-top {
+        background-color: @color-Background;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: @color-Text;
+        font-family: HKGrotesk-Light;
+
+        .panel.header {
+            @media @media-mobile-small {
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+
+            .listas {
+                @media @media-mobile-small {
+                    padding: 3px 0;
+                }
+
+                span:last-of-type {
+                    color: @color-Line;
+                }
+                i{
+                    color:@color-primario ;
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+}

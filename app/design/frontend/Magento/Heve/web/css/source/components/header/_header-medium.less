@@ -1,0 +1,99 @@
+header {
+    .header-medium {
+        .header.content {
+            .logo {
+                color: @color-primario;
+                font-size: 35px;
+                font-family: HKGrotesk-Bold;
+            }
+
+            .menu {
+                width: 48px;
+                height: 48px;
+                background-color: @color-header;
+                border-radius: 10px;
+
+                i::before {
+                    color: @color-primario;
+                    font-size: 40px;
+                }
+            }
+
+            .part2 {
+                .search-bar {
+                    border-radius: 10px;
+                    width: 507px;
+                    padding: 5px 10px;
+                    transition: all 0.3s ease-in-out;
+                    background-color: @color-header;
+
+                    &:focus-within {
+                        // border: solid 2px #aaa;
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                    }
+
+                    input[type="text"] {
+                        border: none;
+                        outline: none;
+                        padding: 10px;
+                        font-size: 14px;
+                        background-color: transparent;
+                        box-shadow: none;
+                        font-family: HKGrotesk-Light;
+
+                        &:focus {
+                            border: none;
+                            outline: none;
+                        }
+
+                    }
+
+                    i {
+                        color: @color-primario;
+                        font-size: 20px;
+                    }
+
+                    .actions {
+                        border: none;
+                        background: none;
+                        outline: none;
+                        cursor: pointer;
+                        transition: color 0.3s ease-in-out;
+
+                        button {
+                            border: none;
+                            background: none;
+                            outline: none;
+                            cursor: pointer;
+                            transition: color 0.3s ease-in-out;
+
+                            &:active {
+                                background-color: none;
+                                border: none;
+                                background: none;
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+
+                .login,
+                .carrito {
+                    i {
+                        font-size: 20px;
+                        color: @color-primario;
+                    }
+
+                    span {
+                        font-family: HKGrotesk-Bold;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,9 @@
 footer {
   position: relative;
-  .footer.content{
+
+  .footer.content {
     margin-top: 0;
+    border-top: none;
   }
 
   .mask img {
@@ -13,7 +15,7 @@ footer {
   }
 
   &.page-footer {
-    background: rebeccapurple;
+    background: @color-primario;
 
   }
 
@@ -77,7 +79,7 @@ footer {
         font-size: 20px;
         line-height: 20px;
         border-bottom: 2px solid @color-White;
-        padding-bottom: 8px;
+        // padding-bottom: 8px;
       }
 
       ul {
@@ -90,11 +92,25 @@ footer {
         font-weight: 500;
         font-size: 16px;
         line-height: 37px;
+        list-style-type: disc;
       }
     }
 
 
 
+  }
+
+  .copyright {
+    font-family: 'HKGrotesk-Light';
+    color: @color-White;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #05ABF3;
+    padding-top: 20px;
   }
 
 }
