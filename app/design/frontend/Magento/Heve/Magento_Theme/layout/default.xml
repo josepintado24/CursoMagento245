@@ -2,10 +2,10 @@
 	<body>
 		<referenceContainer name="header.container">
 			<!-- remove header elements -->
-			<referenceBlock name="header.panel.wrapper" remove="true" />
-			<referenceBlock name="logo" remove="true" />
-			<referenceBlock name="minicart" remove="true" />
-			<referenceBlock name="top.search" remove="true" />
+			<referenceBlock name="header.panel.wrapper" remove="false" />
+			<referenceBlock name="logo" remove="false" />
+			<referenceBlock name="minicart" remove="false" />
+			<referenceBlock name="top.search" remove="false" />
 			<referenceBlock name="catalog.compare.link" remove="true" />
 			<!-- logo -->
 			<referenceBlock name="logo">
