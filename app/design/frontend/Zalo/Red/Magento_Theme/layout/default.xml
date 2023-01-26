@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="footer-bottom-content">
+        <block class="Magento\Framework\View\Element\Template" name="report.bugs.bottom" template="Magento_Theme::html/bugreport.phtml"/>
+    </referenceContainer>
+     <referenceContainer name="footer-bottom-plus">
+        <block class="Magento\Framework\View\Element\Template" name="report.bugs.plus" template="Magento_Theme::html/bugreportplus.phtml"/>
+    </referenceContainer>
+</page>
